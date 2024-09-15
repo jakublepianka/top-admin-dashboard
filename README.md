@@ -1,3 +1,3 @@
 # top-admin-dashboard
-The Odin Project
+The Odin Project,
 Admin Dashboard Project
