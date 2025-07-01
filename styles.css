@@ -182,20 +182,31 @@
 body {
   margin: 0;
   display: grid;
-  grid-template-columns: 20% 80%; 
+  grid-template-columns: 1fr 4fr; 
   height: 100vh;
   width: 100vw;
 }
 
 .body-container {
   display: grid;
-  grid-template-rows: 20% 80%;
+  grid-template-rows: 1fr 4fr;
 }
+
+/*------------------- v sidebar v -------------------*/
+
+
+.sidebar-container {
+  background-color: #C06C84;
+}
+
+
+/*------------------- v header v -------------------*/
 
 .header {
   display: grid;
-  grid-template-rows: 35% 65%;
-  padding: 1.5rem 54px;
+  grid-template-rows: 1fr 2fr;
+  padding: 1.5rem 3.5rem;
+  background-color: #F67280;
 }
 
 .header-top {
@@ -206,7 +217,11 @@ body {
 
 .logged-user-info-1 {
   display: inline-grid;
-  grid-template-columns: 33% 33% 33%;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+
+.header-username-1 {
+  margin: 0;
 }
 
 .header-bottom {
@@ -216,20 +231,94 @@ body {
 }
 
 .logged-user-info-2 {
-  display: inline-grid;
-  grid-template-columns: 33% 67%;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  height: 100%;
+  
 }
 
-/* .logged-user-info-2-name {
-} */
+.header-username-2 {
+  margin: 0;
+}
+
+.logged-user-info-2 {
+  display: grid;
+}
 
 .header-action-buttons {
   display: inline-grid;
-  grid-template-columns: 33% 33% 33%;
+  grid-template-columns: 1fr 1fr 1fr;
 }
 
 
+/*------------------- v main & project cards v -------------------*/
+
+
+.project-header > h2 {
+  margin: 0;
+}
+
 .main-content-container {
-  display: inline-grid;
-  grid-template-columns: 60% 30% ;
+  display: grid;
+  grid-template-columns: 3fr 1fr;
+  padding: 2rem 2.5rem 3.5rem 1rem;
+  background-color: #355C7D;
+  gap: 1rem;
+}
+
+.project-container {
+  display: grid;
+  grid-template-rows: auto 1fr;
+  height: 100%;
+}
+
+.project-main {
+  height: 100%;
+  display: grid;
+  grid-template: 1fr 1fr 1fr / 1fr 1fr;
+  gap: 1rem;
+}
+
+.project-card {
+  background-color: #F67280;
+}
+
+
+/*------------------- announcements & trending -------------------*/
+
+.announcements-trending-container {
+  display: grid;
+  grid-template-rows: auto 1fr;
+  height: 100%;
+}
+
+.announcements-header > h2, .trending-header > h2 {
+  margin: 0;
+}
+
+/* .announcements-container {
+} */
+
+/* .announcements-header {
+} */
+
+.announcements-main {
+  display: grid;
+  background-color: #F67280;
+  margin: 0 0 1rem 0;
+}
+
+/* .trending-header {
+  
+} */
+
+.trending-container {
+  display: grid;
+  grid-template-rows: auto 1fr  ;
+}
+.trending-main {
+  display: grid;
+  background-color: #F67280;
+  height: 100%;
 }
