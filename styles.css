@@ -192,13 +192,64 @@ body {
   grid-template-rows: 1fr 4fr;
 }
 
+
+
+.avatar {
+  height: 2.5rem;
+  width: 2.5rem;
+}
+
 /*------------------- v sidebar v -------------------*/
 
 
 .sidebar-container {
-  background-color: #C06C84;
+  background-color: #424874;
+  color: #F4EEFF;
+  grid-template-rows: auto 1fr;
+  padding: 1rem 1rem 0 1.5rem;
 }
 
+.sidebar {
+  display: grid;
+  grid-template-rows: auto 1fr;
+  height: 100%;
+}
+
+
+.sidebar-header > h1 > img {
+  height: 2.5rem;
+  width: 2.5rem;
+}
+
+.sidebar-header > h1 {
+  display: flex;
+  align-items: center;
+  margin: 0 0 1rem 0;
+}
+
+.sidebar-body-2 {
+  margin: 4rem 0 0 0;  
+}
+
+
+ul, li {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+li > h2 {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.sidebar-icon, .dash-icon {
+  filter: invert(100%) sepia(71%) saturate(1347%) hue-rotate(182deg) brightness(101%) contrast(104%);
+  height: 1.25rem;
+  width: 1.25rem;
+  margin-right: 0.5rem; 
+}
 
 /*------------------- v header v -------------------*/
 
@@ -206,7 +257,8 @@ body {
   display: grid;
   grid-template-rows: 1fr 2fr;
   padding: 1.5rem 3.5rem;
-  background-color: #F67280;
+  background-color: #424874;
+  color: #F4EEFF;
 }
 
 .header-top {
@@ -215,9 +267,39 @@ body {
   align-items: center;
 }
 
+.search-form {
+  display: flex;
+  align-items: center;
+}
+
+input[type=text] {
+  width: 20rem;
+  height: 1rem;
+  padding: 0.35rem;
+  border: none;
+  border-radius: 0.5rem;
+  background-color: #F4EEFF;
+  color: #424874;
+  font-size: 1rem;
+}
+
+input[type=text]:focus {
+  outline: none;
+  border: none;
+}
+
+.header-icon {
+  filter: invert(100%) sepia(71%) saturate(1347%) hue-rotate(182deg) brightness(101%) contrast(104%);
+  height: 1.75rem;
+  width: 1.75rem;
+  /* margin-right: 0.5rem;  */
+}
+
+
 .logged-user-info-1 {
-  display: inline-grid;
-  grid-template-columns: 1fr 1fr 1fr;
+  display: flex;
+  align-items: center; 
+  gap: 0.5rem;
 }
 
 .header-username-1 {
@@ -236,6 +318,12 @@ body {
   align-items: center;
   height: 100%;
   
+}
+
+.header-avatar {
+  height: 4rem;
+  width: 4rem;
+  /* border-radius: 50%; */
 }
 
 .header-username-2 {
@@ -263,7 +351,7 @@ body {
   display: grid;
   grid-template-columns: 3fr 1fr;
   padding: 2rem 2.5rem 3.5rem 1rem;
-  background-color: #355C7D;
+  background-color: #DCD6F7;
   gap: 1rem;
 }
 
@@ -281,7 +369,7 @@ body {
 }
 
 .project-card {
-  background-color: #F67280;
+  background-color: #A6B1E1;
 }
 
 
@@ -305,7 +393,7 @@ body {
 
 .announcements-main {
   display: grid;
-  background-color: #F67280;
+  background-color: #A6B1E1;
   margin: 0 0 1rem 0;
 }
 
@@ -319,6 +407,6 @@ body {
 }
 .trending-main {
   display: grid;
-  background-color: #F67280;
+  background-color: #A6B1E1;
   height: 100%;
 }
